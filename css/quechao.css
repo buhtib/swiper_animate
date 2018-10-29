@@ -1,3 +1,35 @@
 body,html{
-    
+    font-size: 100px;   
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+/* 最外层 */
+.outside {
+    height: 100%;
+    width: 100%;
+}
+/* 音乐 */
+.music{
+    padding: 0.5rem;
+    position: absolute;
+    background: url(../images/musicBtn.png)  no-repeat center;
+    right: 0;
+    top: 0;
+    z-index: 10;
+}
+.music.active {
+    background: url(../images/musicBtnOff.png) center;
+}
+
+.index{
+    position: relative;
+}
+.index h1{
+    position: absolute;
+    left: 0.15rem;
+    top: 0.15rem;
+    z-index: 10;
+    margin: 0;
 }

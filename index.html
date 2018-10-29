@@ -1,23 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- device-width -->
+    <meta name="viewport" content="target-densitydpi=device-dpi,width=640,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>雀巢滑动页面</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/quechao.css">
     <link rel="stylesheet" href="css/animate.css">
 </head>
+
 <body>
     <!-- 音乐播放 -->
     <div class="music">
-        
+        <audio  loop autoplay preload="auto">
+            <source src="music/music.mp3" type="audio/mpeg">
+        </audio>
     </div>
-    
 
-    <script src="js/swiper-3.4.2.min.js"></script>
+    <div class="swiper-container outside">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide index">
+                <h1 class="fadeIn animated"><img src="images/logo_gray.png" alt=""></h1>
+            </div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+        </div>
+    </div>
+
+
+    <script src="js/swiper.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/quechao.js"></script>
+    <script>
+         $.ready(function() {
+                $('audio')[0].play()
+            })
+        animate.init()
+    </script>
 </body>
+
 </html>
