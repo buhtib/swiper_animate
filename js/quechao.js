@@ -26,7 +26,7 @@ var animate = (function() {
             var mySwiper = new Swiper('.swiper-container', {
                 direction: 'vertical',
                 mousewheel: true,
-                initialSlide:3,
+                initialSlide:5,
                 on: {
                     init: function () {
                         swiperAnimateCache(this); //隐藏动画元素 

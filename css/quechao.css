@@ -50,7 +50,7 @@ body,html{
 .index{
     position: relative;
 }
-.index h1{
+h1{
     position: absolute;
     left: 0.15rem;
     top: 0.15rem;
@@ -267,3 +267,69 @@ body,html{
 }
 
 /* 第六页 */
+.slide6 .end_txtTop{
+    font-size: 0.5rem;
+    color: #669cff;
+    font-weight: bold;
+    text-align: center;
+    margin: 20% auto;
+}
+/* 搜索框 */
+.slide6 .search_box{
+    position: relative;
+    border: solid 1px #959ba0;
+    overflow: hidden;
+    margin: 0 15%;
+    padding: 0.05rem;
+}
+/* 遮罩层 */
+.slide6 .hide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+/* 看似点击 */
+@keyframes click{
+    from {
+        opacity: 1;
+      }
+      to {
+         opacity: 0.6;
+      }
+}
+.search_box .zoom{
+    z-index: 5;
+    animation: click  0.2s  linear 1.8s;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0.5rem;
+    height: 100%;
+    background:#669cff url(../images/iconsZoom.png) no-repeat center;
+}
+
+/* 猛戳 */
+.slide6 .tip{
+    position: absolute;
+    bottom: 12%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.tip>img{
+    margin: 0 auto;
+}
+.tip .btn {
+    /* 让父级宽度由自己撑开 */
+    float: left;
+    align-self: center;
+    display: flex;
+    justify-content: flex-start;
+}
+.tip .btn>a{
+    margin: 0.15rem;
+}
