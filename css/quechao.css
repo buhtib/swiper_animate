@@ -212,3 +212,39 @@ body,html{
 .slide4{
     background-color: #34A05D;
 }
+/* 统一设定*/
+.slide4 .dogfix,.slide4 .slide4_rightLight, .slide4 .slide4_sel_left, .slide4 .slide4_btnLight{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+.slide4 .slide4_leftLight ,.slide4 .slide4_sel_right, .slide4 .slide4_btnRight{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+/* 灯光 */
+.slide4 .slide4_rightLight, .slide4 .slide4_leftLight{
+    z-index: 9;
+}
+/* 选我 */
+.slide4 .slide4_sel_left, .slide4 .slide4_sel_right{
+    z-index: 7;
+}
+/* 最下方 */
+.slide4 .slide4_down{
+    display: block;
+    text-align: center;
+    position: relative;
+    background: url(../images/FixArrowTxt.png) 50% 50% no-repeat;
+    height: 0.61rem;
+    top: 1.24rem;
+}
+.slide4_down>img{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -0.83rem;
+}
+
