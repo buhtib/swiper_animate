@@ -248,3 +248,22 @@ body,html{
     margin-left: -0.83rem;
 }
 
+/* 第五页 */
+.slide5{
+    background-color: #679CFD;
+}
+/* 上 */
+.slide5 .slide5_summer{
+    margin: 0 auto;
+    margin-top: 14%;
+}
+/* 下 */
+.slide5 .slidesTitle{
+    position: absolute;
+    top: 50%;
+}
+.slide5 .slidesTitle>img{
+    position: absolute;
+}
+
+/* 第六页 */
