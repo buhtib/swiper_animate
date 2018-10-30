@@ -126,13 +126,15 @@ body,html{
     right: 100%;
 }
 
+.slide2, .slide3, .slide4, .slide5, .slide6 {
+    position: relative;
+}
 .slide2 .up_arrow,.slide3 .up_arrow,.slide4 .up_arrow,.slide5 .up_arrow,.slide6 .up_arrow {
     padding-bottom: 0;
 }
 
 /* 第二页 */
 .outside .slide2 {
-    position: relative;
     background-color: #FD6579;
 }
 /* boy */
@@ -156,9 +158,11 @@ body,html{
     top: 0.25em;;
     z-index: 9;
 }
-.bounLeft>img{
+/* 图片拼装 */
+.bounLeft>img, .bounRight>img{
     position: absolute;
 }
+
 /* 下部文字 */
 .slide2 .bounRight{
     position: absolute;
@@ -168,7 +172,43 @@ body,html{
     width: 1.14rem;
     height: 3.37rem;
 }
-.bounRight>img{
+
+
+/* 第三页 */
+.outside .slide3 {
+    background-color: #0DBDE2;
+}
+/* girl */
+.slide3 .girl{
     position: absolute;
+    left: 0;
+    top: 0;
+}
+/* 闪烁图案 */
+.slide3 .light_right,.slide3 .star_right{
+    opacity: 0.8;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+/* 上部文字 */
+.slide3 .bounLeft{
+    position: absolute;
+    left: 0.25em;
+    top: 0.25em;;
+    z-index: 9;
+}
+/* 下部文字 */
+.slide3 .bounRight{
+    position: absolute;
+    right: 0.25rem;
+    bottom: 0.25rem;
+    z-index: 9;
+    width: 1.19rem;
+    height: 2.32rem;
 }
 
+/* 第四页 */
+.slide4{
+    background-color: #34A05D;
+}
