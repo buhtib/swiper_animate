@@ -5,6 +5,38 @@ body,html{
     position: relative;
     overflow: hidden;
 }
+/* 横屏提示 */
+.hide_box {
+    display: none;
+}
+.exceed_hide{
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4)
+}
+.exceed_hide .tips_center{
+    display: flex;
+    flex-direction: column;
+}
+.tips_center p{
+    align-self: center;
+    width: 0.54rem;
+    height: 0.72rem;
+    border: 2px solid white;
+}
+.tips_center span{
+    font-weight: bold;
+    font-size: 0.28rem;
+}
+
+
+
 @-webkit-keyframes fadeUp {
     from {
       opacity: 0.8;

@@ -2,6 +2,7 @@ var animate = (function() {
 
     return {
         init:function() {
+            this.HorizontalScreen()
             // 自动播放
             $.ready(function () {
                 $('audio')[0].play()
@@ -26,7 +27,7 @@ var animate = (function() {
             var mySwiper = new Swiper('.swiper-container', {
                 direction: 'vertical',
                 mousewheel: true,
-                initialSlide:5,
+                // initialSlide:5,
                 on: {
                     init: function () {
                         swiperAnimateCache(this); //隐藏动画元素 
@@ -37,7 +38,17 @@ var animate = (function() {
                     }
                 }
             });
+        },
+
+        // 提示横屏
+        HorizontalScreen:function() {
+            if(window.screen.width >= 1316) {
+                $('.hide_box').show()
+            }else {
+                $('.hide_box').hide()
+            }
+            window.addEventListener('load', this.HorizontalScreen)
+            window.addEventListener('resize', this.HorizontalScreen)
         }
-        
     }
 }())
