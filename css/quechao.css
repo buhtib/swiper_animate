@@ -325,16 +325,21 @@ h1{
 }
 /* 看似点击 */
 @keyframes click{
-    from {
+    0% {
         opacity: 1;
       }
-      to {
+      50% {
          opacity: 0.4;
       }
+      100%{
+        opacity: 1;
+      }
+}
+.click{
+    animation-name: click;
 }
 .search_box .zoom{
-    z-index: 10;
-    animation: click  0.2s  linear 1.8s;
+    z-index: 20;
     position: absolute;
     right: 0;
     top: 0;
