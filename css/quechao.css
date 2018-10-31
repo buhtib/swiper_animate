@@ -329,11 +329,11 @@ h1{
         opacity: 1;
       }
       to {
-         opacity: 0.6;
+         opacity: 0.4;
       }
 }
 .search_box .zoom{
-    z-index: 5;
+    z-index: 10;
     animation: click  0.2s  linear 1.8s;
     position: absolute;
     right: 0;
